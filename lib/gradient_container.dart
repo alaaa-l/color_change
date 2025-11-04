@@ -56,10 +56,14 @@ class _GradientContainerState extends State<GradientContainer> {
       ),
       child: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ColorButton(changeColor),
+            SizedBox(height: 15),
             Text('Red: $red Green: $green Blue: $blue'),
+            SizedBox(height: 45),
             DirectionButton(changeDirection),
+            SizedBox(height: 15),
             Text('Direction: ${dir[directionIndex]}'),
           ],
         ),
